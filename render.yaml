@@ -1,0 +1,19 @@
+# Don't Remove Credit @RnpUpdate
+# Subscribe YouTube Channel For Amazing Bot @RnpDeveloper
+# Ask Doubt on telegram @MrRnp
+
+services:
+  # A Docker web service
+  - type: web
+    name: SEARCH-ZONE-ROBOT 
+    env: python
+    startCommand: python3 bot.py
+    buildCommand: pip3 install -U -r requirements.txt
+    repo: https://github.com/rohanbhai27/SEARCH-ZONE-ROBOT.git # optional
+    region: oregon # optional (defaults to oregon)
+    plan: free # optional (defaults to starter)
+    branch: main # optional (defaults to master)
+    numInstances: 1 # optional (defaults to 1)
+    healthCheckPath: /
+
+#End of yaml
